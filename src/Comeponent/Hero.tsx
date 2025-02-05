@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Hero: React.FC = () => {
   return (
     <section className=" bg-black">
-        <div className='min-h-[60vh] '>
+        <div className='min-h-[50vh] '>
             <div className='flex flex-col justify-center items-center'>
             <div className='mt-12'>
                 <img src={logo} className='w-[250px] h-[250px] rounded-full ' alt="" />

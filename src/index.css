@@ -24,3 +24,7 @@
 .active-link {
   @apply text-amber-700 font-bold;
 }
+.robo{
+  font-family: "Roboto Mono", serif;
+
+}
