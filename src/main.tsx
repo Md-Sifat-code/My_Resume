@@ -5,12 +5,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
+import Main_layout from "./MainLayout/Main_layout";
 
 // Create a router with routes
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <Main_layout/>,
   },
 ]);
 
