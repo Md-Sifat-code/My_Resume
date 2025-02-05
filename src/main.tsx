@@ -7,27 +7,45 @@ import {
 import "./index.css";
 import Main_layout from "./MainLayout/Main_layout";
 import Home from "./Comeponent/Home";
+import Loading from "./Loading/Loading"; // Import the loading component
 
-// Create a router with routes
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main_layout/>,
+    element: <Main_layout />,
     children: [
       {
         path: "/",
-        element: <Home/>
-      }
-    ]
+        element: <Home />,
+      },
+    ],
   },
 ]);
 
-// Find the root element and render the RouterProvider
-const rootElement = document.getElementById("root");
-if (rootElement) {
-  ReactDOM.createRoot(rootElement).render(
+const App = () => {
+  const [loading, setLoading] = React.useState(true);
+
+  // Set timeout to stop loading after 4 seconds
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 4000); // 4 seconds
+
+    return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+  }, []);
+
+  return (
     <React.StrictMode>
-      <RouterProvider router={router} />
+      {loading ? (
+        <Loading /> // Show the loading screen while loading
+      ) : (
+        <RouterProvider router={router} /> // Show the router after loading is done
+      )}
     </React.StrictMode>
   );
+};
+
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(<App />);
 }
