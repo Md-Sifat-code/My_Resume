@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+/* fonts  */
+.tridon {
+  font-family: "Triodion", serif;
+
+}
+
+*{
+  background-color: black;
+}
+/* custom colors */
+.text_color{
+  color: #4FD1C5 ;
+}
+.lavis {
+  font-family: "Lavishly Yours", serif;
+
+}
