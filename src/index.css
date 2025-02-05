@@ -6,9 +6,7 @@
 
 }
 
-*{
-  background-color: black;
-}
+
 /* custom colors */
 .text_color{
   color: #4FD1C5 ;
@@ -16,4 +14,13 @@
 .lavis {
   font-family: "Lavishly Yours", serif;
 
+}
+
+/* Add this to your global CSS file */
+.nav-link {
+  @apply text-amber-500 hover:text-amber-700;
+}
+/* Example for adding an active class in your CSS */
+.active-link {
+  @apply text-amber-700 font-bold;
 }
