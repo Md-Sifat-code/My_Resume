@@ -2,6 +2,7 @@ import React from 'react'
 import Hero from './Hero'
 import Skills from './Skills'
 import About from './About'
+import Projects from './Projects'
 
 const Home: React.FC=()=> {
   return (
@@ -9,6 +10,7 @@ const Home: React.FC=()=> {
         <Hero/>
         <About/>
         <Skills/>
+        <Projects/>
     </>
   )
 }
