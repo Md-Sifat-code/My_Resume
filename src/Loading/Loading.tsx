@@ -23,8 +23,8 @@ const Loading: React.FC = () => {
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="flex flex-col items-center justify-center space-y-4 p-6 bg-transparent rounded-lg shadow-xl w-full max-w-md">
         {/* Title */}
-        <h1 className="text-4xl font-extrabold text-amber-600">
-          <span className="text-amber-500">S</span>ifat
+        <h1 className="text-4xl tridon font-extrabold text-amber-600">
+          <span className="text-amber-500 lavis">S</span>ifat
         </h1>
         
         {/* Progress Bar and Percentage */}

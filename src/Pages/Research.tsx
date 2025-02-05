@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Blogs: React.FC =() => {
+const Research: React.FC =() => {
   return (
     <section className=' bg-black'>
         <div className=' min-h-screen  container flex justify-center items-center mx-auto'>
@@ -11,4 +11,4 @@ const Blogs: React.FC =() => {
   )
 }
 
-export default Blogs
+export default Research

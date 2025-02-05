@@ -8,16 +8,32 @@ import "./index.css";
 import Main_layout from "./MainLayout/Main_layout";
 import Home from "./Comeponent/Home";
 import Loading from "./Loading/Loading"; // Import the loading component
+import Blogs from "./Pages/Blogs";
+import Research from "./Pages/Research";
+import Achievements from "./Pages/Achievements";
+import Error from "./Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main_layout />,
+    errorElement:<Error/>,
     children: [
       {
         path: "/",
         element: <Home />,
       },
+      {
+        path: "/blogs",
+        element: <Blogs/>
+      },
+      {
+        path: "/research",
+        element: <Research/>
+      },{
+        path: "/achievements",
+        element: <Achievements/>
+      }
     ],
   },
 ]);
