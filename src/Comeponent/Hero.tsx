@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
         <div className='min-h-[50vh] '>
             <div className='flex flex-col justify-center items-center'>
             <div className='mt-12'>
-                <img src={logo} className='w-[250px] h-[250px] rounded-full ' alt="" />
+                <img src={logo} className='w-[250px] h-[250px] rounded-full border-2 border-amber-600 ' alt="" />
             </div>
             <div className='mt-6'>
                 <h1 className='text-white text-center'>Md Sifat Bin Jibon</h1>

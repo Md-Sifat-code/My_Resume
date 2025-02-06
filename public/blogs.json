@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "The Art of LeetCode",
+    "picture": "public/b-1.png",
+    "description": "Discover the beauty of problem-solving through code and how it transforms our thinking ability to the next level...",
+    "publishedDate": "2024-03-15",
+    "image_1": "public/i-1.png",
+    "image_2": "public/i-2.png",
+    "readmore": "In this blog, we'll dive deep into the world of LeetCode and explore strategies for mastering problem-solving techniques. So, how did I start my LeetCode journey?\n\nI began by solving at least two problems per day, without rushing. I focused on building the logic behind each solution and then visualizing it in code. Whenever I failed, I tried to think of the problem in a different way. When I couldn't figure out the logic, I took help from other people's solutions, but I made sure to keep my code the same, only upgrading it based on the logic. My goal was to build complex logic in the simplest way I could."
+  },
+  {
+    "id": 2,
+    "title": "Future of Web Development",
+    "picture": "public/b-2.png",
+    "description": "Exploring upcoming trends and technologies that will shape the future of web experiences...",
+    "publishedDate": "2024-03-10",
+    "image_1": "public/web-dev-1.png",
+    "image_2": "public/web-dev-2.png",
+    "readmore": "In this blog, we’ll discuss the future of web development, emerging technologies like WebAssembly, and how they’ll change how we build applications... [full content here]"
+  }
+]

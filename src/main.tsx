@@ -12,6 +12,7 @@ import Blogs from "./Pages/Blogs";
 import Research from "./Pages/Research";
 import Achievements from "./Pages/Achievements";
 import Error from "./Error/Error";
+import { BlogProvider } from "./Context/BlogContext";
 
 const router = createBrowserRouter([
   {
@@ -55,7 +56,9 @@ const App = () => {
       {loading ? (
         <Loading /> // Show the loading screen while loading
       ) : (
-        <RouterProvider router={router} /> // Show the router after loading is done
+        <BlogProvider>
+          <RouterProvider router={router} />
+        </BlogProvider> // Show the router after loading is done
       )}
     </React.StrictMode>
   );
